@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Meyerweb reset */
+
+body{
+    background-image: url(../img/metal.png);
+    font-family: sans-serif;
+}
+
+/* Main Nav for the site */
+
+#main-nav{
+    background-color: #000;
+    list-style: none;
+    height: 40px;
+    padding-top: 28px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#main-nav li{
+    display: inline;
+    margin-right: -5px;
+    padding: 29px 15px 22px;
+    transition-duration: 0.3s;
+}
+
+#main-nav li:hover{
+    background-color: #ffd629;
+    padding: 29px 0 22px;
+    transition-duration: 0.2s;
+}
+
+#main-nav a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    padding: 21px 0;
+}
+
+#main-nav li:hover a{
+    color: #000;
+    padding: 29px 30px;
+    transition-duration: 0.2s;
+}
+
+/* End of Nav */
+
+#logo{
+    background-image: url(../img/symbols/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 101px;
+    float: left;
+}
+
+#logo:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#banner{
+    background-image: url(../img/symbols/banner.png);
+    background-color: #ffd629;
+    width: 100%;
+    height: 101px;
+    margin-top: 67px;
+    background-size: contain;
+}
+
+#page-title{
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    height: 40px;
+    border-radius: 25px;
+    margin: 5px 135px;
+}
+
+#page-title h1{
+    font-size: 25px;
+    padding: 7px 0 0 490px;
+}
+
+#previous{
+    list-style: none;
+    margin: -452px 1215px;
+    float: right;
+    transition-duration: 0.3s;
+}
+
+#previous a img{
+    width: 50px;
+    height: 40px;
+    margin: 5px 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+
+#previous:hover a img{
+    width: 100px;
+    transition-duration: 0.3s;
+}
+
+#next{
+    list-style: none;
+    margin: -452px 60px;
+    float: right;
+}
+
+#next a img{
+    width: 50px;
+    height: 40px;
+    margin: 5px 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+
+#next:hover a img{
+    width: 100px;
+    margin: 5px -40px;
+    transition-duration: 0.3s;
+}
+
+
+#pic-wrapper{
+    background-color: #ffd629;
+    width: 46%;
+    height:  347px;
+    margin: 10px 350px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#pic-wrapper img{
+    background-image:url(../img/prices.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 347px;
+    background-size: contain;
+}
+
+/* Secondary Nav for the site*/
+
+#secondary-nav{
+    margin: 40px 577px;
+    background-color: #ffd629;
+    width: 210px;
+    height: 32px;
+    list-style: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+#secondary-nav #indicator{
+    background-color: #000;
+    height: 62px;
+}
+
+#secondary-nav li{
+    background-color: lightgray;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+#secondary-nav li:hover{
+    background-color: #000;
+    height: 62px;
+    transition-duration: 0.3s;
+}
+
+#secondary-nav li a{
+    width: 31px;
+    height: 31px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+/* End of sceondary nav */
